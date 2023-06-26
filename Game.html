@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Fearless.</title>
+    <link rel="stylesheet" href="./stylequizz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@1,700&family=Baloo+Thambi+2:wght@700&family=Keania+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <div>
+    <div class="first">
+        <div class="back">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="./SocialAnxiety.html">Fearless.</a>
+                    <a href="./introduction.html" class="Introduction">Introduction</a>
+                    <a href="./Game.html" class="Game">Quiz</a>
+                    <a href="./Resources.html" class="Resources">Resources</a>
+                  </ul>
+                </div>
+              </nav>
+
+
+              <div class="quiz-container" id="quiz">
+                <h2 id="question">Question is loading...</h2>
+                <ul>
+                    <li>
+                      <input type="radio" name="answer" id="a" class="answer" />
+                      <label for="a" id="a_text">Answer...</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="answer" id="b" class="answer" />
+                      <label for="b" id="b_text">Answer...</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="answer" id="c" class="answer" />
+                      <label for="c" id="c_text">Answer...</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="answer" id="d" class="answer" />
+                      <label for="d" id="d_text">Answer...</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="e" class="answer" />
+                        <label for="e" id="e_text">Answer...</label>
+                      </li>
+                  </ul>
+                  <button id="submitButton">Next</button>
+              </div>
+        </div>
+
+        <script>
+            const quiz = document.getElementById("quiz");
+const answerElements = document.querySelectorAll(".answer");
+const questionElement = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
+const submitButton = document.getElementById("submitButton");
+
+let currentQuiz = 0;
+let score = 0;
+ 
+
+const quizData = [
+  {
+    question: "I often make excuses to not get out of my room",
+    a: "1. Strongly disagree",
+    b: "2. Disagree",
+    c: "3. Not sure",
+    d: "4. Somewhat agree",
+    e: "5. Agree"
+  },
+  {
+    question: "I often practice a conversation before having it.",
+    a: "1. Strongly disagree",
+    b: "2. Disagree",
+    c: "3. Not sure",
+    d: "4. Somewhat agree",
+    e: "5. Agree"
+  },
+  {
+    question: "I often avoid talking face to face with someone.",
+    a: "1. Strongly disagree",
+    b: "2. Disagree",
+    c: "3. Not sure",
+    d: "4. Somewhat agree",
+    e: "5. Agree"
+  },
+  {
+    question: "I often avoid calls and make excuses later.",
+    a: "1. Strongly disagree",
+    b: "2. Disagree",
+    c: "3. Not sure",
+    d: "4. Somewhat agree",
+    e: "5. Agree"
+  },
+  {
+    question: "I often avoid going to parties and social events",
+    a: "1. Strongly disagree",
+    b: "2. Disagree",
+    c: "3. Not sure",
+    d: "4. Somewhat agree",
+    e: "5. Agree"
+  },
+];
+
+const deselectAnswers = () => {
+  answerElements.forEach((answer) => (answer.checked = false));
+};
+
+const getSelected = () => {
+  let answer;
+  answerElements.forEach((answerElement) => {
+    if (answerElement.checked) answer = answerElement.id;
+  });
+  return answer;
+};
+
+
+const loadQuiz = () => {
+  deselectAnswers();
+  const currentQuizData = quizData[currentQuiz];
+  questionElement.innerText = currentQuizData.question;
+  a_text.innerText = currentQuizData.a;
+  b_text.innerText = currentQuizData.b;
+  c_text.innerText = currentQuizData.c;
+  d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
+};
+
+loadQuiz();
+
+
+submitButton.addEventListener("click", () => {
+  const answer = getSelected();
+  if (answer) {
+    if (answer === "a") score++;
+    else if (answer === "b"){
+    score +=2;
+    }else if (answer === "c"){
+        score +=3;
+    }
+    else if (answer === "d"){
+        score +=4;
+    }else if (answer === "e"){
+        score +=5;
+    }
+    currentQuiz++;
+    if (currentQuiz < quizData.length) loadQuiz();
+    else {
+        const percent = score /25 *100 ;
+      quiz.innerHTML = `
+            <h2>You have ${score}/25 points, that means you have ${percent}% of probabilities to have social anxiety. This quiz is not accurate for a professional diagnosis, consult a psychologist.</h2>
+            <button onclick="history.go(0)">Answer Again</button>
+        ` // location.reload() won't work in CodePen for security reasons;
+    }
+  }
+  });
+
+        </script>
+
+    
+
+
+</body>
+</html>

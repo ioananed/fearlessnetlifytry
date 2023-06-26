@@ -1,0 +1,303 @@
+ 
+.navbar-brand{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+width: 275px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+left: 42px;
+top: 15px;
+color: #FFF;
+font-size: 40px;
+font-family: 'Baloo Thambi 2', cursive;
+text-decoration:none;
+}
+
+a:hover{
+  color: #777777;
+
+}
+
+.highlight{
+    flex-direction: column;
+position: absolute;
+left: 15%;
+top: 34%;
+font-size: 730%;
+font-family: 'Anonymous Pro', monospace;
+line-height: normal;
+text-shadow: 2px 2px 8px #4a5553;
+color:#472A2B;
+}
+
+.Introduction{
+  display: flex;
+width: 155px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+right: 314px;
+top: 11px;
+color: #FFF;
+font-size: 20px;
+font-family: 'Baloo Thambi 2', cursive;
+text-decoration:none;
+}
+
+.Game{
+display: flex;
+width: 143px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+right: 140px;
+top: 11px;
+color: #FFF;
+font-size: 20px;
+font-family: 'Baloo Thambi 2', cursive;
+text-decoration:none;
+}
+
+.Resources{
+display: flex;
+width: 143px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+right: 31px;
+top: 11px;
+color: #FFF;
+font-size: 20px;
+font-family: 'Baloo Thambi 2';
+text-decoration:none;
+}
+
+.background-1{
+    background-image:url('./Group\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+	width: 110%;
+    margin-top: -40px;
+    margin-left: -10px;
+}
+
+.ellipse-1{
+    background-image:url('./Ellipse\ 8.png');
+    background-size: cover;
+    height: 104%;
+    width: 52%;
+    border-radius: 50%;
+    position: absolute;
+left: -5%;
+top: 3%;
+    
+}
+
+.more{
+    display: flex;
+width: 399px;
+height: 58px;
+transform: rotate(90deg);
+flex-direction: column;
+position: absolute;
+left: 85%;
+top: 821px;
+color: #FFF;
+font-size: 32px;
+font-family: 'Baloo Thambi 2';
+}
+
+.social{
+flex-direction: column;
+position: absolute;
+left: 15%;
+top: 10%;
+color: #FFF;
+font-size: 730%;
+font-family: 'Anonymous Pro', monospace;
+line-height: normal;
+text-shadow: 2px 2px 8px #4a5553;
+}
+
+
+.what{
+ display: flex;
+width: 882px;
+height: 154px;
+flex-direction: column;
+position: absolute;
+left: 53%;
+top: 10%;
+color: #FFF;
+font-size: 420%;
+font-family: 'Keania One';
+text-transform: uppercase;
+}
+
+.explanation1{
+    display: flex;
+width: 770px;
+height: 600px;
+flex-direction: column;
+position: absolute;
+right: 113px;
+top: 216px;
+color: #FFF;
+font-size: 27px;
+font-family: 'Baloo Thambi 2';
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+body{
+    background-color: #472A2B;
+}
+ 
+body section {
+	 width: 90%;
+	 max-width: 1200px;
+	 margin: 0 auto;
+}
+.row {
+	 align-items: center;
+	 height: 100vh;
+
+}
+ .card {
+	 position: relative;
+	 height: 400px;
+	 width: 100%;
+	 margin: 10px 0;
+	 transition: ease all 2.3s;
+	 perspective: 1200px;
+}
+ .card:hover .cover {
+	 transform: rotateX(0deg) rotateY(-180deg);
+}
+
+ .card:hover .cover:after {
+	 background-color: black;
+}
+ .card:hover .cover h1 {
+	 transform: translateZ(100px);
+}
+ .card:hover .cover .price {
+	 transform: translateZ(60px);
+}
+ .card:hover .cover a {
+	 transform: translateZ(-60px) rotatey(-180deg);
+}
+ .card .cover {
+	 position: absolute;
+	 height: 100%;
+	 width: 100%;
+	 transform-style: preserve-3d;
+	 transition: ease all 2.3s;
+	 background-size: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+}
+
+ .card .cover:after {
+	 content: '';
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 right: 0px;
+	 bottom: 0px;
+	 z-index: 2;
+	 transition: ease all 1.3s;
+	 background: rgba(0, 0, 0, .4);
+}
+ .card .cover.item-a {
+	 background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPDxUPDw8VFRUVFRUVFRUVFRUVFRUVFRUXFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRkrKy0tKysrKzcrKzcrNystKy0rNysrLSsrKysrLSsrKysrKysrKysrKy0rLS0rKysrK//AABEIALgBEgMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBgcF/8QAGBABAQEBAQAAAAAAAAAAAAAAAAECEYH/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAYF/8QAGBEBAQEBAQAAAAAAAAAAAAAAAAECEQP/2gAMAwEAAhEDEQA/APPAYdLmIAAiBjgBAGARgAHDhQ4mqi4uIi4itctMtMs8tMsdN8NctssstsMNOvDbDbDDDbDm07PNtlrlllrlhp2YaZXGeWkZV0ZOKKCJaRRAEYoFAAIAECAMH0AAnCgyeoeFBGARAyMAAAgAcIwqEcKqiouJioitMtI0yzjXLHTfLXLXDHLbLDTrw2y2yxw2w59OzDXLXLLLXLDTrw0i4zi4yroyuGnpoaQzIAwC6AAAAQAIwfQQBOHMB6Z4YEYMEDIAEogADAAVCOJqoqLiIuIrTK40yjLTLLTfLXLXDLDXDDTqw2y2yxw1y59OvDbLTLLLTLDTrw1ioiVUrOt81ocSfUNJTNJhQBAEBQQB9IAF0yLoMdcWAHpXiCBgAgYAIAwCBgA4cKKiaqHFxMVEVpFxplEaZZabZaZa4ZZa5Y6dWGuW2WOWuWGnVhrlrGOWsYV1ZrSVcZ5UzrfNX00mlpKodLo6R9MF0dA6ZQugDp9BEC6ZkAHGHwB6R4sgYAIGACBgAuGDIwcEOFTioqJi4itIrLSM40jKtstMtcs8tMstOnDXLXLHLXNYadOGuWmWWWkZV05rSKlZxcrOtpVw+olOI40lWOph9LiumQLo4OqKl0wOgdIGXTBdMBx4MnoXjgDABAwAQMAyMGQ4IYORNVDioUVE1pFRplEXlnWuWmWmWeWmWWnRlpGmWeV5rGujLXK4zlXGVdGa0ipURTOtZVymiU5U8aSr6OpPpH1Q6kA+maQB0wQA6YIAdcmDD77yJAwDBGABwHwEC4YMjEPgMqqQ4qQoqIrSKi4iLiK0yuNMxnFxlW+WkaSs4vLOt8tJVxnFys62zVxURKqVnY1lXDR008aSr6Op6fS4fVShIHD6ro6QLh9MEOjg6ogAOuVBh915UQAAAGOECMwDAghwj4DghxNVIcVCiomrhxcTFRFaxUXE5VGda5XFxEXGdbZXFxnFRFayrioiKiK0lXKcqDlTxcqwnp9JXVdHSBH1QSAfVAgDBl0AOZMG+08wQMAAAyMjBkZGOGR8BwHCVDhg4mrhxUKKkRWkVFRMVEVpFxURFxFaxcOIioitIuHEyqTWkqumk+pXKqU4kyV1XQnpkfVQJhkfTBdAMzSAOudAN9h5sjEHAYBggDIyMHwQQlGcJRKgiiNKocVChxNXFRSYqIrSKiomGmtItURFRDSKVESqiauKNMNKoqGkyWZ9IEagUoBmACPoA9AHXPgB9Z54wADBgEYMpDIwcHD4Rg4SiqoIoocSqGcKKiVw4ojTVw4qJiomriocScTVxcNKk1cOH1KiXDNJxKldNIhGoF0wZjpGRgEAb4JgPqvgAwCAMAGDAIxDgBKhmAlUOHDBVUOGAlUUYCauHDhhNXDhwBNXFQAEqKMBK4ZgEqGACOHDIEowAAOAAjf/2Q==');
+}
+ .card .cover.item-b {
+	 background-image: url('https://img.freepik.com/premium-photo/color-gradient-grainy-background-red-orange-white-illuminated-spots-black-noise-texture-effect_284753-2332.jpg');
+}
+ .card .cover.item-c {
+	 background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUXFRcVFxcVFxUXFxcXFxcXFxcVFRUYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDysZFRktKystKzcrKzc3KystKzcrKy0rLS0rLS0tLSsrNy0rKysrLSstLS0rKysrKy0rKysrLf/AABEIALgBEgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIEBf/EABkQAQEBAAMAAAAAAAAAAAAAAAABEQJxkf/EABsBAAMBAQEBAQAAAAAAAAAAAAABAgQDBgcF/8QAGREBAQEBAQEAAAAAAAAAAAAAABEBAhID/9oADAMBAAIRAxEAPwD3RmLr9l+wNMroCqmhG0sZCDUIkElqpRKnXPoZarNqNZ+0rFarFTrD9ErNWs1z1h+jNZatZqNYe0qKiWXpKmlQnHSotZppCiGAEUFQDMBDhrgmhm9UlTRvfRGtEAGhIEbSxldILDUi6ktCkSp1z6LWVS1Os/aVirWajWL6JWa1WKjcYfolZq1mo3GLtEtKiYy9FRWSjjoiocSJSocBoGqhggcACGbQxgZvVElWVvj6CurrIRtLrIUOt6azqwQVTUEwt1RNRO459LrNomp3GftKlNZqNxj+iVmrayjcYfolqWlSp3GPtKlpUTGbrEoVNKOO4hRDiYaIHBAQOHFQ0VBFTQEOCGhwPTEo3x79VZNKCtmsroh1qEZ1SgrSJppRO6umpqamI61bUtTUtTuM/ZWeS2sVO4ydlZq1io3GPsZomo3GTvBLRCjN1ghqFHLcEomiJipohwouoUOHFQgcEAQ4cUTVEEejBBuj3dUlQ0QVrTWVtEFa0Z0KCtSjOmiFutJqampjnurqalqaUcOl1nUtSp3GbstZozaneWTtazS1lO8sveGppaifLP1homml5ctwQS0RMVAEKFEDgiiQOHFEBBFAEEd4mmtr29VdZ00QVo1nTRCrWms6aIK1prOmiFutampqaUc91bU1LWbSjj1q1LUtTSjP2Ws0tSlvLN2WompaneWbrCiVKny4dYLU1KXlz3FTUCiYomlohQA0QoogIIqaAgiiAgjvEG2PZVRnQQVolZBBWjWQQqumpqaIndXU1NSiI3VtLWdSiOXWrqWpqWlHHpbWdLWdKM/S1miany4dYqIF5cdwKgmOe4uoBeUQIgUKLomghRQQQRpAEEUZzoEKO60QanrquiU0CqVNNOFQTSiFV1NSocLdXUTUERutWs1EojlurqalBHLoREKOPRqFqaUcesUTQo5bgFRMc9xRAojcKtQKFBUChRRFKFCCKIICBQR26ag1PU1U0TRBVNQMqqFSgqalpQ07pUEtERuiaJpxGiaVLRHLRNEEctLSoFHPQQKOW4uoCYjcAQoncUBMTFECiYpEUoUBFKCKgCFHYmoND04WlTQSpppTIpUDKiCBO6alENGhalKaNE0QI0QpQ56lDUJz1dQCjnuKgFEbgAmJ3AAomCoJiYpAKEpUCgMEBCdlTSju9IgBkqACKmiGkShTTqUKgTomFSmjRKqBGiWgEagARoJQkaogSNBaiU6oikkEWJSqCkRSIpEai+ggdIDs9CIAIEDIRQJRLQNKIBp1NACdRANGiAEaAEjUFAnUAJGgolOoASRQJIAkgAiVAAj/2Q==');
+}
+ .card .cover h1 {
+	 font-weight: 600;
+	 position: absolute;
+	 bottom: 55px;
+	 left: 50px;
+	 color: white;
+	 transform-style: preserve-3d;
+	 transition: ease all 2.3s;
+	 z-index: 3;
+	 font-size: 3em;
+	 transform: translateZ(0px);
+}
+ .card .cover .price {
+	 font-weight: 200;
+	 position: absolute;
+	 top: 55px;
+	 right: 50px;
+	 color: white;
+	 transform-style: preserve-3d;
+	 transition: ease all 2.3s;
+	 z-index: 4;
+	 font-size: 2em;
+	 transform: translateZ(0px);
+}
+ .card .card-back {
+	 position: absolute;
+	 height: 100%;
+	 width: 100%;
+	 background: #0b0f08;
+	 transform-style: preserve-3d;
+	 transition: ease all 2.3s;
+	 transform: translateZ(-1px);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .card .card-back a {
+	 transform-style: preserve-3d;
+	 transition: ease transform 2.3s, ease background 0.5s;
+	 transform: translateZ(-1px) rotatey(-180deg);
+	 background: transparent;
+	 border: 1px solid white;
+	 font-weight: 200;
+	 font-size: 1.3em;
+	 color: white;
+	 padding: 14px 32px;
+	 outline: none;
+	 text-decoration: none;
+}
+ .card .card-back a:hover {
+	 background-color: white;
+	 color: #0b0f08;
+}
+
+
+
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .footer {
+   position: absolute;
+   top: 260%;
+   left: 0;
+   right: 0;
+    width: 110%;
+    padding: 2rem;
+    background: #472A2B;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+  }

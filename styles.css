@@ -1,0 +1,239 @@
+
+  
+.navbar-brand{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+width: 275px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+left: 42px;
+top: 15px;
+color: #FFF;
+font-size: 40px;
+font-family: 'Baloo Thambi 2', cursive;
+text-decoration:none;
+}
+
+a:hover{
+  color: #777777;
+
+}
+
+
+.Introduction{
+  display: flex;
+width: 155px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+right: 314px;
+top: 11px;
+color: #FFF;
+font-size: 20px;
+font-family: 'Baloo Thambi 2', cursive;
+text-decoration:none;
+}
+
+.Game{
+display: flex;
+width: 143px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+right: 140px;
+top: 11px;
+color: #FFF;
+font-size: 20px;
+font-family: 'Baloo Thambi 2', cursive;
+text-decoration:none;
+}
+
+.Resources{
+display: flex;
+width: 143px;
+height: 42px;
+flex-direction: column;
+position: absolute;
+right: 31px;
+top: 11px;
+color: #FFF;
+font-size: 20px;
+font-family: 'Baloo Thambi 2';
+text-decoration:none;
+}
+
+.background-1{
+    background-image:url('./Group\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+	width: 110%;
+    margin-top: -40px;
+    margin-left: -10px;
+}
+
+.ellipse-1{
+    background-image:url('./Ellipse\ 8.png');
+    background-size: cover;
+    height: 104%;
+    width: 52%;
+    border-radius: 50%;
+    position: absolute;
+left: -5%;
+top: 3%;
+    
+}
+
+.bye{
+flex-direction: column;
+position: absolute;
+left: 35%;
+top: 10%;
+color: #FFF;
+font-size: 730%;
+font-family: 'Anonymous Pro', monospace;
+line-height: normal;
+text-shadow: 2px 2px 8px #4a5553;
+
+}
+
+.getstarted{
+    display: flex;
+padding: 10px 70px;
+align-items: flex-start;
+gap: 24px;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 150%;
+    align-self: bottom;
+    border-radius: 50%;
+    position: absolute;
+left: 41%;
+top:  60%;
+border-radius: 34px;
+color: white;
+border: none;
+background: #472A2B;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+.getstarted:hover{
+    background-color: #312122;
+    color: #c7bfbf;
+}
+
+.neverever {
+    color: rgb(4, 3, 3);
+font-size: 64px;
+font-family: Keania One;
+font-weight: 400;
+text-transform: uppercase;
+word-wrap: break-word;
+display: flex;
+width: 456px;
+height: 394px;
+flex-direction: column;
+position: absolute;
+right: 411px;
+top: 262px;
+color: #FFF;
+font-size: 64px;
+font-family: Keania One;
+text-transform: uppercase;
+}
+
+.bubble{
+    display: flex;
+width: 246px;
+height: 108px;
+flex-direction: column;
+position: absolute;
+right: 621px;
+top: 737px;
+color: #FFF;
+font-size: 32px;
+font-family: 'Baloo Thambi 2';
+}
+
+.rectangle2{
+    width: 355px;
+height: 83px;
+position: absolute;
+right: 540px;
+top: 415px;
+background: #472A2B;
+}
+
+.rectangle3{
+    width: 195px;
+height: 89px;
+position: absolute;
+right: 700px;
+top: 498px;
+background: #472A2B;
+}
+
+.rectangle4{
+    width: 269px;
+height: 86px;
+position: absolute;
+right: 626px;
+top: 575px;
+background: #472A2B;
+}
+
+.vid{
+   width:3000px;
+   height:1300px;
+margin-top: 0px;
+margin-left: -550px;
+}
+
+.more{
+    display: flex;
+width: 399px;
+height: 58px;
+transform: rotate(90deg);
+flex-direction: column;
+position: absolute;
+left: 85%;
+top: 821px;
+color: #FFF;
+font-size: 32px;
+font-family: 'Baloo Thambi 2';
+}
+
+.social{
+flex-direction: column;
+position: absolute;
+left: 15%;
+top: 10%;
+color: #FFF;
+font-size: 730%;
+font-family: 'Anonymous Pro', monospace;
+line-height: normal;
+text-shadow: 2px 2px 8px #4a5553;
+}
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.footer {
+  margin-left: -8px;
+  margin-top: -0.5%;
+  width: 110%;
+  padding: 2rem;
+  background: #472A2B;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+
